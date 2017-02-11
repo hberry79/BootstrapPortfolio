@@ -6,9 +6,8 @@
     <title>Heather Berry - Bootstrap Portfolio</title>
     <!--calling in Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <style type="text/css">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    </style>
 </head>
 
 <body>
@@ -16,22 +15,22 @@
         <div class="container">
             <p class="navbar-text">Heather Berry</p>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portflio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="portfolio.html">Portflio</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
-    <div class="container">
+    <div class="container, content">
         <div class="row">
             <div class="col-md-8">
-                <div class=well>
+                <div class="well main-section">
                     <div class="page-header">
                         <h1>About Me</h1>
                     </div>
                     <div class="row">
                         <div class="col-md-5">
-                            <img src="http://placehold.it/250x250">
+                              <img src="assets/images/profpic.png" class="auth-image" alt="Heather Berry">
                         </div>
                         <div class="col-md-7">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur, incidunt excepturi aspernatur, vitae voluptates officia sapiente voluptatibus quidem expedita molestiae. Deserunt et inventore rem dolorum at velit quis natus.
@@ -40,18 +39,18 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Sidebar</div>
+                <div class="panel panel-default sidebar">
+                    <div class="panel-heading"><h2>Connect with me</h2></div>
                     <div class="panel-body">
-                        <div class="row">
-                            <div class=col-md-4>
-                                <img src="http://placehold.it/100x100">
+                        <div class="row social">
+                            <div class="col-md-4 ">
+                                <a href="https://github.com/hberry79"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
                             </div>
-                            <div class=col-md-4>
-                                <img src="http://placehold.it/100x100">
+                            <div class="col-md-4">
+                                 <a href="https://www.linkedin.com/in/heatherberryatl/"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
                             </div>
-                            <div class=col-md-4>
-                                <img src="http://placehold.it/100x100">
+                            <div class="col-md-4">
+                                <a href="http://stackexchange.com/users/9830506/heather-berry"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
                             </div>
                         </div>
                     </div>
@@ -60,8 +59,8 @@
         </div>
     </div>
      <div class="navbar navbar-default navbar-fixed-bottom">
-    <div class="container">
-      <p class="text-muted">Heather Berry</p>
+    <div class="container footer">
+      <p class="text-muted">&copy; 2017 Heather Berry</p>
         
       </div>
     </div>

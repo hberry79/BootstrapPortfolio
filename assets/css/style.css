@@ -3,22 +3,13 @@ body {
   font-size: 18px;
   color: #777;
   line-height: 34px;
-  background: url("../images/concrete_seamless.png");
+  background: url("../images/background.png");
+  background-repeat: repeat;
+   background-attachment: fixed;
+
+  overflow: scroll;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-
-/*general*/
-
-.container {
-  clear: both;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 960px;
-}
 
 h1,
 h2,
@@ -27,9 +18,7 @@ p {
   margin-bottom: 20px;
 }
 
-p:last-child {
-  margin-bottom: 0;
-}
+
 
 h1,
 h2,
@@ -54,10 +43,9 @@ h3 {
 
 /*header*/
 
-#masthead {
-  position: fixed;
+.navbar {
   z-index: 99;
-  margin: 0 0 30px;
+  margin-bottom: 0;
   overflow: auto;
   width: 100%;
   color: #fff;
@@ -65,79 +53,81 @@ h3 {
   border-bottom: 2px solid #ccc;
 }
 
-#logo {
+.navbar-text {
   width: 250px;
   height: 90px;
-  float: left;
   font-family: 'Georgia', Times, Times New Roman, serif;
-  text-align: center;
   line-height: 90px;
-  color: #fff;
   font-weight: 700;
   font-size: 30px;
   text-decoration: none;
   background: #4aaaa5;
 }
 
-nav {
-  float: right;
+.nav {
   margin-top: 25px;
 }
 
+.navbar-default .navbar-text {
+  color: white;
+  padding: 10px;
+  margin: 0;
+}
+
 nav a {
-  display: inline-block;
-  margin-left: 15px;
-  padding-left: 15px;
   color: #999;
   text-decoration: none;
-  line-height: 18px;
   border-left: 1px solid #efefef;
 }
 
-nav a:first-child {
-  border-left: 0 none;
+.page-header {
+  border-bottom: none;
+  padding: auto;
+  margin: auto;
 }
+
+.panel-default>.panel-heading {
+  background: none;
+  border-bottom: none;
+
+}
+
 
 
 /*footer*/
 
-footer {
-  padding: 30px 0;
-  clear: both;
+.footer {
   color: #fff;
   color: #ccc;
   font-size: 12px;
   text-align: center;
   background: #666;
   border-top: 8px solid #4aaaa5;
+  width: 100%;
 }
 
 
 /*sidebar*/
 
 .sidebar {
-  padding: 30px;
-  width: 100%;
-  max-width: 270px;
-  float: right;
-  margin-bottom: 20px;
   background: #fff;
   border: 1px solid #ddd;
+  margin-right: 10%;
+  margin-top: 10%;
 }
 
 h3,
 .sidebar h2 {
   padding-bottom: 20px;
   margin-bottom: 15px;
+
   line-height: 22px;
   border-bottom: 2px solid #eee;
 }
 
 .social {
-  width: 62px;
   height: 62px;
-  margin-top: 8px;
-  margin-right: 5px;
+ margin: 3%;
 }
 
 .social:last-child {
@@ -147,18 +137,13 @@ h3,
 
 /*main*/
 
-#main-container {
-  padding-top: 130px;
-}
-
 .main-section {
-  padding: 30px;
-  margin: 0 0 40px 0;
-  width: 100%;
-  max-width: 650px;
-  float: left;
   background: #fff;
   border: 1px solid #ddd;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  margin-top: 5%;
+  overflow: scroll;
 }
 
 
@@ -197,7 +182,7 @@ h3,
 }
 
 .auth-image {
-  width: 200px;
+  width: 95%;
   height: auto;
   margin-top: 10px;
   margin-right: 25px;
@@ -243,86 +228,4 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
-}
-
-@media only screen and (max-width: 980px) {
-   .auth-image {
-    float: none;
-    width: 300px;
-    display: block;
-    margin: auto;
-   }
-
-   .work img {
-    float: none;
-    display: block;
-    margin: auto;
-
-   }
-
-   .main-section {
-    max-width: 45%;
-    margin-left: 10%;
-   }
-
-   .sidebar {
-    margin-right: 10%;
-   }
-
-   #logo {
-    margin-left: 10%; 
-   }
-   
-   nav {
-    margin-right: 10%;
-   }
-
-@media only screen and (max-width: 768px) {
-    .main-section {
-      float: none;
-      max-width: 650px;
-      margin: auto;
-      overflow: auto;
-    }
-
-    .sidebar {
-      float: none;
-      display: block;
-      max-width: 650px;
-      margin-right: auto;
-      margin-left: auto;
-      margin-top: 15px;
-  
-    }
-
-
-}
-
-@media only screen and (max-width: 640px) {
-        #masthead {
-          position: static;
-        }
-
-        #logo{
-          width: 100%;
-          margin: auto;
-        }
-        nav {
-          float: none;
-          margin-top: auto;
-          text-align: center;
-        }
-        .main-section {
-          max-width: 550px;
-
-        }
-        #main-container {
-          padding-top: 0;
-        }
-        .sidebar {
-          max-width: 550px;
-        }
-
-      
-    
 }
